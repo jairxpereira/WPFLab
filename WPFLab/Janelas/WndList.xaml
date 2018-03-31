@@ -1,0 +1,62 @@
+﻿<Window x:Class="WPFLab.Janelas.WndList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFLab.Janelas"
+        mc:Ignorable="d"
+        Title="WndList" Height="539.361" Width="800" SizeToContent="Height">
+    <StackPanel Margin="5">
+        <ListBox x:Name="listCores">
+            <ListBoxItem>Green</ListBoxItem>
+            <ListBoxItem>Blue</ListBoxItem>
+            <ListBoxItem>Yellow</ListBoxItem>
+            <ListBoxItem>Red</ListBoxItem>
+        </ListBox>
+
+        <ComboBox x:Name="combo" IsEditable="True" SelectedIndex="0">
+            <ComboBoxItem>Green</ComboBoxItem>
+            <ComboBoxItem>Blue</ComboBoxItem>
+            <ComboBoxItem>Yellow</ComboBoxItem>
+            <ComboBoxItem>Red</ComboBoxItem>
+        </ComboBox>
+
+        <ListBox Margin="0,5,0,0">
+            <ListBoxItem>
+                <Image Source="/images/Pic0.png"></Image>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Image Source="/images/Pic1.png"></Image>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Image Source="/images/Pic2.png"></Image>
+            </ListBoxItem>
+        </ListBox>
+
+        <ListBox Margin="0,5,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/images/Pic0.png" Width="30" Height="30"></Image>
+                <Label VerticalContentAlignment="Center">A happy face</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/images/Pic1.png" Width="30" Height="30"></Image>
+                <Label VerticalContentAlignment="Center">A warning sign</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/images/Pic2.png" Width="30" Height="30"></Image>
+                <Label VerticalContentAlignment="Center">A happy face</Label>
+            </StackPanel>
+        </ListBox>
+        
+        <ListBox x:Name="lst" SelectionChanged="lst_SelectionChanged" Margin="0,5,0,0" Height="49">
+            <CheckBox Margin="3" >banana</CheckBox>
+            <CheckBox Margin="3">laranja</CheckBox>
+            <CheckBox Margin="3" >goiaba</CheckBox>
+            <CheckBox Margin="3">abacate</CheckBox>
+        </ListBox>
+        
+        <TextBox x:Name="txtSelection" IsReadOnly="True" Text="Status" Height="51"/>
+
+    </StackPanel>
+    
+</Window>

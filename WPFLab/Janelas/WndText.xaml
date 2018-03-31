@@ -1,0 +1,46 @@
+﻿<Window x:Class="WPFLab.Janelas.WndText"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFLab.Janelas"
+        mc:Ignorable="d"
+        Title="WndText" Height="450" Width="396.277">
+        
+    
+    <TabControl Margin="5" >
+        <TabItem Header="TextBox">
+            <StackPanel Orientation="Vertical">
+        <Label Content="Editor de textos" HorizontalAlignment="Center"/>
+        <TextBox x:Name="txtEditor" Height="136" TextWrapping="Wrap" Text="TextBox" 
+                 VerticalScrollBarVisibility="Auto" AcceptsReturn="True" SpellCheck.IsEnabled="True"/>
+         <TextBox x:Name="txtFeedback" Height="86" />
+                <Button x:Name="btnGetSelection" Content="Get Selection" HorizontalAlignment="Left" Click="btnGetSelection_onClick"/>
+            </StackPanel>
+                </TabItem>
+
+        <TabItem Header="PasswordBox">
+            <StackPanel Orientation="Vertical">
+                <Label Content="Modificando senha"/>
+                <Label Content="Usuário" Margin="0,5,0,0"/>
+                <TextBox x:Name="txtUsuario" Height="23" TextWrapping="Wrap" Text="jairxpereira"/>
+                <Label Content="Senha:" Margin="0,10,0,0"/>
+                <PasswordBox x:Name="txtPassword"/>
+                <Label Content="Confirmar password:" Margin="0,10,0,0"/>
+                <PasswordBox x:Name="txtConfirmPassword"/>
+                <Button x:Name="btnSubmit" Content="Enviar" Click="btnSubmit_onClick"/>
+                <Label x:Name="lbStatus" Content="Status"/>
+
+            </StackPanel>
+                
+        </TabItem>
+
+        <TabItem Header="RichTextEdit">
+            <StackPanel Orientation="Vertical">
+                
+            </StackPanel>
+        </TabItem>
+                </TabControl>
+    
+</Window>
+    
