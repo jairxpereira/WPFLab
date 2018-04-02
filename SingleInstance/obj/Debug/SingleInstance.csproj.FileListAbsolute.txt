@@ -1,6 +1,9 @@
 C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\bin\Debug\SingleInstance.exe.config
 C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\bin\Debug\SingleInstance.exe
 C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\bin\Debug\SingleInstance.pdb
+C:\output\bin\Debug\SingleInstance.exe.config
+C:\output\bin\Debug\SingleInstance.exe
+C:\output\bin\Debug\SingleInstance.pdb
 C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\MainWindow.g.cs
 C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\WndEditor.g.cs
 C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\App.g.cs
@@ -14,7 +17,3 @@ C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\SingleInstanc
 C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\SingleInstance.csproj.CoreCompileInputs.cache
 C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\SingleInstance.exe
 C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\SingleInstance.pdb
-C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\SingleInstance.csprojResolveAssemblyReference.cache
-C:\output\bin\Debug\SingleInstance.exe.config
-C:\output\bin\Debug\SingleInstance.exe
-C:\output\bin\Debug\SingleInstance.pdb
