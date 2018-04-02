@@ -17,3 +17,4 @@ C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\SingleInstanc
 C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\SingleInstance.csproj.CoreCompileInputs.cache
 C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\SingleInstance.exe
 C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\SingleInstance.pdb
+C:\Users\jairxpereira\source\repos\WPFLab\SingleInstance\obj\Debug\SingleInstance.csprojResolveAssemblyReference.cache

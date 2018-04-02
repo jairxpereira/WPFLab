@@ -38,7 +38,7 @@ namespace SingleInstance
         public void addWindow( Window wnd )
         {
             janelas.Add(wnd);
-            listJanelas.Items.Add(wnd.Title);
+            
             janelaIndex++;
 
             String[] cmd = null;
@@ -56,14 +56,23 @@ namespace SingleInstance
             bool bfile = System.IO.File.Exists(cmd_str);
             if (bfile== true)
             {
+                wnd.Title = cmd_str;
                 cmd_str = System.IO.File.ReadAllText(cmd_str);
 
             }
 
 
+            
 
             if (cmd == null) cmd_str = "sem linha de argumentos";
             ((WndEditor)wnd).addText(cmd_str);
+
+            JanelaPlaceHolder holder = new JanelaPlaceHolder(wnd);
+            listJanelas.Items.Add(holder);
+
+
+            this.Activate();
+            wnd.Activate();
 
           
                           
@@ -95,6 +104,35 @@ namespace SingleInstance
         public void addWindow()
         {
             this.btnNovaJanela_onClick(null, null);
+        }
+
+        private void btnFecharJanela_onClick(object sender, RoutedEventArgs e)
+        {
+            int janela_id = listJanelas.SelectedIndex;
+            if (janela_id < 0) return;
+
+            JanelaPlaceHolder jph = (JanelaPlaceHolder) listJanelas.SelectedItem;
+            janelas.Remove(jph.wnd);
+            listJanelas.Items.RemoveAt(janela_id);
+            jph.wnd.Close();
+        }
+
+        public  void removerJanela( Window wnd)
+        {
+            janelas.Remove(wnd);
+
+            foreach ( object obj in listJanelas.Items)
+            {
+                JanelaPlaceHolder holder = (JanelaPlaceHolder)obj;
+                if (holder.wnd == wnd) listJanelas.Items.Remove(holder);
+            }
+
+        }
+
+        private void btnFecharApp_onClick(object sender, RoutedEventArgs e)
+        {
+            this.Close();            
+            Application.Current.Shutdown();
         }
     }
 }

@@ -30,5 +30,12 @@ namespace SingleInstance
             txtEditor.Text += str;
 
         }
+
+        private void owndEditor_onClosed(object sender, EventArgs e)
+        {
+            MainWindow main = (MainWindow)Application.Current.MainWindow;
+            main.removerJanela(this);
+
+        }
     }
 }

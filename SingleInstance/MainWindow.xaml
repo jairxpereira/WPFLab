@@ -8,6 +8,12 @@
         Title="MyNotepad" Height="285.638" Width="496.809" Loaded="ownd_onInit">
     <StackPanel>
         <ListBox x:Name="listJanelas" Height="218"/>
-        <Button x:Name="btnNovaJanela" Content="Nova janela" Height="35" Click="btnNovaJanela_onClick"/>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnNovaJanela" Content="Nova janela" Height="35" Click="btnNovaJanela_onClick"/>
+            <Button x:Name="btnFecharJanela" Height="35" Click="btnFecharJanela_onClick">Fechar janela</Button>
+            <Button x:Name="btnFecharApp" Height="35" Background="#FFF19797" Click="btnFecharApp_onClick">SAIR</Button>
+            
+        </StackPanel>
+        
     </StackPanel>
 </Window>

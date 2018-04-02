@@ -1,11 +1,11 @@
-﻿<Window x:Class="SingleInstance.WndEditor"
+﻿<Window x:Name="owndEditor" x:Class="SingleInstance.WndEditor"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SingleInstance"
         mc:Ignorable="d"
-        Title="WndEditor" Height="213.83" Width="394.681">
+        Title="WndEditor" Height="213.83" Width="394.681" ResizeMode="NoResize" Closed="owndEditor_onClosed">
     <StackPanel>
         <TextBox x:Name="txtEditor" Height="409" TextWrapping="Wrap" Text="TextBox" Margin="5"/>
     </StackPanel>
