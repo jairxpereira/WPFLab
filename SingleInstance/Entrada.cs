@@ -35,6 +35,7 @@ namespace SingleInstance
                 String[] cmdLine = new string[1];
                 cmdLine[0] = e.CommandLine[0];
                 app.commandLine = cmdLine;
+                //
 
 
             }
