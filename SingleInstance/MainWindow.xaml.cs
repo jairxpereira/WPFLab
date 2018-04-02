@@ -41,6 +41,35 @@ namespace SingleInstance
             listJanelas.Items.Add(wnd.Title);
             janelaIndex++;
 
+            String[] cmd = null;
+            SingleInstance.App app = (SingleInstance.App)Application.Current;
+            cmd = app.commandLine;
+            String cmd_str = null;
+
+            if (cmd != null )
+            foreach ( string str in cmd )
+            {
+                cmd_str += str + " ";
+
+            }           
+
+            bool bfile = System.IO.File.Exists(cmd_str);
+            if (bfile== true)
+            {
+                cmd_str = System.IO.File.ReadAllText(cmd_str);
+
+            }
+
+
+
+            if (cmd == null) cmd_str = "sem linha de argumentos";
+            ((WndEditor)wnd).addText(cmd_str);
+
+          
+                          
+
+           
+
 
         }
 
@@ -56,6 +85,16 @@ namespace SingleInstance
             wnd.Owner = this;
             addWindow(wnd);
             wnd.Show();
+        }       
+
+        private void ownd_onInit(object sender, RoutedEventArgs e)
+        {
+            this.btnNovaJanela_onClick(null, null);
+        }
+
+        public void addWindow()
+        {
+            this.btnNovaJanela_onClick(null, null);
         }
     }
 }

@@ -13,5 +13,13 @@ namespace SingleInstance
     /// </summary>
     public partial class App : Application
     {
+        public string[] commandLine;
+
+
+        private void SingleInstance_onStart(object sender, StartupEventArgs e)
+        {
+            
+            commandLine = e.Args;
+        }
     }
 }

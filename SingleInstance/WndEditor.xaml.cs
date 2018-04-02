@@ -23,5 +23,12 @@ namespace SingleInstance
         {
             InitializeComponent();
         }
+
+        public void addText (string str)
+        {
+            txtEditor.Text = "";
+            txtEditor.Text += str;
+
+        }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SingleInstance"
         mc:Ignorable="d"
-        Title="MyNotepad" Height="285.638" Width="496.809">
+        Title="MyNotepad" Height="285.638" Width="496.809" Loaded="ownd_onInit">
     <StackPanel>
         <ListBox x:Name="listJanelas" Height="218"/>
         <Button x:Name="btnNovaJanela" Content="Nova janela" Height="35" Click="btnNovaJanela_onClick"/>
