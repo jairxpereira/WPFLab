@@ -1,0 +1,67 @@
+﻿<Window x:Name="ownd" x:Class="WPFLab.Janelas.WndCommand"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFLab.Janelas"
+        mc:Ignorable="d"
+        Title="WndCommand" Height="234" Width="374" Loaded="ownd_onLoaded">
+
+    <Window.Resources>
+       <SolidColorBrush x:Key="mybrush" Color="AliceBlue"></SolidColorBrush>
+    </Window.Resources>   
+
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.New" Executed="action_onNovo" CanExecute="novoCommand_CanExecute"></CommandBinding>
+
+        <CommandBinding Command="local:GameCommands.Jogar"
+Executed="jogarCommand_Executed"></CommandBinding>
+    </Window.CommandBindings>
+
+
+    <StackPanel>
+   
+        <Menu Height="25">
+            <MenuItem Header="Arquivo">
+                <MenuItem Header="Novo" Command="ApplicationCommands.New"></MenuItem>
+                <MenuItem Header="Abrir"></MenuItem>
+                <MenuItem Header="Fechar"></MenuItem>
+                <MenuItem Header="Sair" Command="ApplicationCommands.Close"></MenuItem>
+            </MenuItem>
+
+            <MenuItem Header="Editar">
+                <MenuItem Header="Copiar" Command="ApplicationCommands.Copy"></MenuItem>
+                <MenuItem Header="Colar" Command="ApplicationCommands.Paste"> </MenuItem>
+                <MenuItem Header="Selecionar tudo" Command="ApplicationCommands.SelectAll" ></MenuItem>
+                <MenuItem Header="Novo Ok?" Click="toggleNovo" ></MenuItem>
+                <MenuItem Header="Jogar" Command="local:GameCommands.Jogar" ></MenuItem>
+            </MenuItem>
+
+        </Menu>
+
+        <ToolBar x:Name="otool">
+            <ToolBar.Background>
+                <StaticResource ResourceKey="mybrush"></StaticResource>
+            </ToolBar.Background>
+            <Button Command="Cut" Button.ToolTip="cortar">
+                <Button.Content>
+                    <StackPanel>
+                        <Image  Source="/WPFLab;component/Images/tesoura.png" Height="64" Width="64"> </Image>                        
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            
+            <Button Command="Copy">Copy</Button>
+            <Button Command="Paste">Paste</Button>
+        </ToolBar>
+
+        <TextBox x:Name="txtEditor" Height="57" TextWrapping="Wrap" Text="" Margin="0,3,0,0"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnNovo" Command="ApplicationCommands.New" Content="{Binding RelativeSource={RelativeSource Self}, Path=Command.Text}" HorizontalAlignment="Left" Width="101" Margin="0,3,0,0"/>
+            <Button x:Name="btnTeste" Content="Teste" Click="btnTeste_onClick" Width="50"/>
+            <Button x:Name="btnSair" Content="SAIR" Background="#FFF19797" HorizontalAlignment="Left" Width="50" Margin="0,3,0,0"/>
+        </StackPanel>        
+
+    </StackPanel>
+</Window>

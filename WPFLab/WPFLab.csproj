@@ -62,6 +62,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Janelas\WndCommand.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Janelas\WndDates.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -90,8 +94,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Janelas\GameCommands.cs" />
     <Compile Include="Janelas\WndBinding.xaml.cs">
       <DependentUpon>WndBinding.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Janelas\WndCommand.xaml.cs">
+      <DependentUpon>WndCommand.xaml</DependentUpon>
     </Compile>
     <Compile Include="Janelas\WndDates.xaml.cs">
       <DependentUpon>WndDates.xaml</DependentUpon>
@@ -146,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tesoura.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

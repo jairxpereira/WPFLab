@@ -16,6 +16,7 @@
         
         <Button x:Name="btnSplash" Content="SplashScreen" Click="btnSplash_onClick"/>
         <Button x:Name="btnBinding" Content="Binding" Click="btnBinding_onClick"/>
+        <Button x:Name="btnCommand" Content="Command Window" Click="btnCommand_onClick"/>
         
     </StackPanel>
 </Window>

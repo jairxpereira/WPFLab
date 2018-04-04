@@ -80,5 +80,11 @@ namespace WPFLab
             TimeSpan timeSpan = new TimeSpan(0, 0, 3);
             quadro.Close(timeSpan);
         }
+
+        private void btnCommand_onClick(object sender, RoutedEventArgs e)
+        {
+            var wnd = new Janelas.WndCommand();
+            wnd.Show();
+        }
     }
 }
