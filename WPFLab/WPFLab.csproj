@@ -74,6 +74,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Janelas\WndTree.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -93,6 +97,9 @@
     </Compile>
     <Compile Include="Janelas\WndText.xaml.cs">
       <DependentUpon>WndText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Janelas\WndTree.xaml.cs">
+      <DependentUpon>WndTree.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

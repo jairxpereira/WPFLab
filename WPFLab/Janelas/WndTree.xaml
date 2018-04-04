@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPFLab.Janelas.WndTree"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFLab.Janelas"
+        mc:Ignorable="d"
+        Title="WndTree" Height="450" Width="399">
+    <StackPanel>
+        <TreeView x:Name="otree" Height="233" SelectedItemChanged="otree_onSelectedItemChanged" MouseUp="otree_onMouseUp">
+            <TreeViewItem Header="Mercado">
+                <TreeViewItem Header="bolachas">
+                    <TreeViewItem Header="wafer"/>
+                    <TreeViewItem Header="tostines"/>
+                </TreeViewItem>
+                <TreeViewItem Header="arroz"/>
+                <TreeViewItem Header="feijão"/>
+            </TreeViewItem>
+            <TreeViewItem Header="Frutas">
+                <TreeViewItem Header="goiaba"/>
+                <TreeViewItem Header="laranja"/>
+                <TreeViewItem Header="melancia"/>
+            </TreeViewItem>
+            <TreeViewItem Header="Legumes">
+                <TreeViewItem Header="alface"/>
+                <TreeViewItem Header="tomate"/>
+                <TreeViewItem Header="couve"/>
+            </TreeViewItem>
+        </TreeView>
+        <Label x:Name="lbStatus" Content="Status"/>
+    </StackPanel>
+</Window>

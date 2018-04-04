@@ -53,5 +53,11 @@ namespace WPFLab
             wnd.Show();
 
         }
+
+        private void btnTreeWindow_onClick(object sender, RoutedEventArgs e)
+        {
+            var wnd = new Janelas.WndTree();
+            wnd.Show();
+        }
     }
 }

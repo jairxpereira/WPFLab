@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFLab"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="469.681">
+        Title="MainWindow" Height="250.756" Width="252.942">
     <StackPanel Margin="5">
         <Label Content="Painel de controle" HorizontalAlignment="Center"/>
         <Button x:Name="btnWindowText" Content="Window Text" Click="btnWindowText_onClick" MinHeight="15"/>
         <Button x:Name="btnWindowList" Content="Window List" Click="btnWindowList_onClick" MinHeight="15"/>
         <Button x:Name="btnRanged" Content="Window Ranged Controls" Click="btnRanged_onClick" MinHeight="15"/>
         <Button x:Name="btnWindowDatas" Content="Controle de datas" Click="btnWindowDatas_onClick"/>
+        <Button x:Name="btnTreeWindow" Content="Tree Window" Click="btnTreeWindow_onClick"/>
     </StackPanel>
 </Window>
