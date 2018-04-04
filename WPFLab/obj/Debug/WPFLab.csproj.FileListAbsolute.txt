@@ -23,3 +23,5 @@ C:\Users\jairxpereira\source\repos\WPFLab\WPFLab\obj\Debug\WPFLab.exe
 C:\Users\jairxpereira\source\repos\WPFLab\WPFLab\obj\Debug\WPFLab.pdb
 C:\Users\jairxpereira\source\repos\WPFLab\WPFLab\obj\Debug\Janelas\WndTree.g.cs
 C:\Users\jairxpereira\source\repos\WPFLab\WPFLab\obj\Debug\Janelas\WndTree.baml
+C:\Users\jairxpereira\source\repos\WPFLab\WPFLab\obj\Debug\Janelas\WndBinding.g.cs
+C:\Users\jairxpereira\source\repos\WPFLab\WPFLab\obj\Debug\Janelas\WndBinding.baml

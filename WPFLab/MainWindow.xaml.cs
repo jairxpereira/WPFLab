@@ -59,5 +59,26 @@ namespace WPFLab
             var wnd = new Janelas.WndTree();
             wnd.Show();
         }
+
+
+        private void btnBinding_onClick(object sender, RoutedEventArgs e)
+        {
+            var wnd = new Janelas.WndBinding();
+            wnd.Show();
+        }
+
+        private void btnSplash_onClick(object sender, RoutedEventArgs e)
+        {
+            SplashScreen quadro = new SplashScreen("images/splash.png");
+            // Show the splash screen.
+            // The true parameter sets the splashScreen to fade away automatically
+            // after the first window appears.
+
+            quadro.Show(false);
+
+            System.Threading.Thread.Sleep(2000);
+            TimeSpan timeSpan = new TimeSpan(0, 0, 3);
+            quadro.Close(timeSpan);
+        }
     }
 }

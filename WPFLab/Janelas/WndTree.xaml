@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="WndTree" Height="450" Width="399">
     <StackPanel>
-        <TreeView x:Name="otree" Height="233" SelectedItemChanged="otree_onSelectedItemChanged" MouseUp="otree_onMouseUp">
+        <TreeView x:Name="otree" Height="233" MouseUp="otree_onMouseUp">
             <TreeViewItem Header="Mercado">
                 <TreeViewItem Header="bolachas">
                     <TreeViewItem Header="wafer"/>
@@ -28,5 +28,9 @@
             </TreeViewItem>
         </TreeView>
         <Label x:Name="lbStatus" Content="Status"/>
+        <StatusBar x:Name="statusBar" Height="25" >
+            <StatusBarItem x:Name="info" Content="Application is running OK"/>
+        </StatusBar>
+        
     </StackPanel>
 </Window>

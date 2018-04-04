@@ -1,11 +1,11 @@
-﻿<Window x:Class="WPFLab.MainWindow"
+﻿<Window x:Name="ownd" x:Class="WPFLab.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFLab"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250.756" Width="252.942">
+        Title="MainWindow" Height="250.756" Width="252.942" WindowStartupLocation="CenterScreen">
     <StackPanel Margin="5">
         <Label Content="Painel de controle" HorizontalAlignment="Center"/>
         <Button x:Name="btnWindowText" Content="Window Text" Click="btnWindowText_onClick" MinHeight="15"/>
@@ -13,5 +13,9 @@
         <Button x:Name="btnRanged" Content="Window Ranged Controls" Click="btnRanged_onClick" MinHeight="15"/>
         <Button x:Name="btnWindowDatas" Content="Controle de datas" Click="btnWindowDatas_onClick"/>
         <Button x:Name="btnTreeWindow" Content="Tree Window" Click="btnTreeWindow_onClick"/>
+        
+        <Button x:Name="btnSplash" Content="SplashScreen" Click="btnSplash_onClick"/>
+        <Button x:Name="btnBinding" Content="Binding" Click="btnBinding_onClick"/>
+        
     </StackPanel>
 </Window>

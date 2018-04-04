@@ -15,26 +15,23 @@ using System.Windows.Shapes;
 namespace WPFLab.Janelas
 {
     /// <summary>
-    /// Lógica interna para WndTree.xaml
+    /// Lógica interna para WndBinding.xaml
     /// </summary>
-    public partial class WndTree : Window
+    public partial class WndBinding : Window
     {
-        public WndTree()
+        public WndBinding()
         {
             InitializeComponent();
-        }       
+        }
 
-        private void otree_onMouseUp(object sender, MouseButtonEventArgs e)
+        private void btnSetLarge_onClick(object sender, RoutedEventArgs e)
         {
+            sliderFontSize.Value = 30;
+        }
 
-            TreeViewItem item = (TreeViewItem)otree.SelectedItem;
-            lbStatus.Content = item.Header.ToString();
-
-            DateTime today = DateTime.Now;
-            info.Content = today.ToShortTimeString();
-            
-
-           
+        private void btnSetLargeEx_onClick(object sender, RoutedEventArgs e)
+        {
+            lblSampleText.FontSize = 30;
         }
     }
 }
