@@ -140,14 +140,14 @@ namespace WPFLab
             {
                 uri = new Uri("ImageLibrary;component/images/Pic0.png", UriKind.Relative);
                 img.Source = new BitmapImage(uri);
-                Tools.sayHello("Uri relativa");
+                Tools.sayHello("--- Uri relativa - falhou! ---");
             }
                 
             else
             {
                 uri = new Uri("pack://application:,,,/ImageLibrary;component/images/Pic1.png");
                 img.Source = new BitmapImage(uri);
-                Tools.sayHello("Uri absoluta");
+                Tools.sayHello("--- Uri absoluta ---");
             }
                 
 
