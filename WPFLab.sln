@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFLab", "WPFLab\WPFLab.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleInstance", "SingleInstance\SingleInstance.csproj", "{31A5B39D-EFA8-4EDA-9758-5EF374BDD5FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageLibrary", "ImageLibrary\ImageLibrary.csproj", "{D5F628C4-DBF4-4E1A-9FB6-DB7AE78D0AE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{31A5B39D-EFA8-4EDA-9758-5EF374BDD5FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31A5B39D-EFA8-4EDA-9758-5EF374BDD5FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31A5B39D-EFA8-4EDA-9758-5EF374BDD5FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F628C4-DBF4-4E1A-9FB6-DB7AE78D0AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F628C4-DBF4-4E1A-9FB6-DB7AE78D0AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F628C4-DBF4-4E1A-9FB6-DB7AE78D0AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F628C4-DBF4-4E1A-9FB6-DB7AE78D0AE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

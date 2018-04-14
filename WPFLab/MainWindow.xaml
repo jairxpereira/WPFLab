@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFLab"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250.756" Width="252.942" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="344.756" Width="348.942" WindowStartupLocation="CenterScreen">
     <StackPanel Margin="5">
         <Label Content="Painel de controle" HorizontalAlignment="Center"/>
         <Button x:Name="btnWindowText" Content="Window Text" Click="btnWindowText_onClick" MinHeight="15"/>
@@ -17,6 +17,17 @@
         <Button x:Name="btnSplash" Content="SplashScreen" Click="btnSplash_onClick"/>
         <Button x:Name="btnBinding" Content="Binding" Click="btnBinding_onClick"/>
         <Button x:Name="btnCommand" Content="Command Window" Click="btnCommand_onClick"/>
-        
+
+        <StackPanel Orientation="Horizontal" >
+            <Border BorderThickness="2" BorderBrush="Black">
+                <Image Source="Images/Pic0.png" x:Name="img"/>
+            </Border>
+            
+            <Button x:Name="btnGetResourceList" Content="GetResourceList" Click="btnGetResourceList_onClick" />
+            <Button x:Name="btnGetResourceOtherLib" Content="ResourceOtherLib" Click="ResourceOtherLib_onClick" Width="163" />
+            <MediaElement Name="Sound" Source="Sounds/explode.wav" LoadedBehavior="Manual"></MediaElement>
+        </StackPanel>
+
+
     </StackPanel>
 </Window>

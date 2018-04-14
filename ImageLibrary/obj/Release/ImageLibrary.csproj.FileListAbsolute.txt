@@ -1,0 +1,7 @@
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\bin\Release\ImageLibrary.dll
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\bin\Release\ImageLibrary.pdb
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\obj\Release\ImageLibrary.csprojResolveAssemblyReference.cache
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\obj\Release\ImageLibrary.csproj.CoreCompileInputs.cache
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\obj\Release\ImageLibrary.dll
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\obj\Release\ImageLibrary.pdb
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\obj\Release\ImageLibrary.g.resources
