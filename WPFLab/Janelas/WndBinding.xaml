@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFLab.Janelas"
         mc:Ignorable="d"
-        Title="WndBinding" Height="450" Width="800">
+        Title="WndBinding" Height="450" Width="497">
     <StackPanel>
         
         <Slider Name="sliderFontSize" Margin="3" Minimum="1" Maximum="40" Value="10"
@@ -15,6 +15,15 @@ TickFrequency="1" TickPlacement="TopLeft"></Slider>
 FontSize="{Binding ElementName=sliderFontSize, Path=Value, Mode=TwoWay}" ></TextBlock>
         <Button x:Name="btnSetLarge" Content="Set Large" Click="btnSetLarge_onClick" HorizontalAlignment="Left"/>
         <Button x:Name="btnSetLargeEx" Content="Set Large Ex" Click="btnSetLargeEx_onClick" HorizontalAlignment="Left"/>
+        <Separator></Separator>
+        <TextBlock Margin="10" Text="Aplicando e limpando binding via código" Name="lblInfo"></TextBlock>
+        <Slider Name="sliderFontSizeEx" Margin="3" Minimum="1" Maximum="40" Value="10"
+TickFrequency="1" TickPlacement="TopLeft"></Slider>
+        <TextBlock Margin="10" Text="Simple Text" Name="lblSampleTextEx"></TextBlock>
+        <Button x:Name="btnSetBinding" Content="btnSetBinding" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnSetBinding_onClick"/>
+        <Button x:Name="btnClearBinding" Content="btnClearBinding" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnClearBinding_onClick"/>
+
+
 
     </StackPanel>
 </Window>

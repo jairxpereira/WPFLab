@@ -77,7 +77,8 @@ namespace WPFLab
 
         private void btnSplash_onClick(object sender, RoutedEventArgs e)
         {
-            SplashScreen quadro = new SplashScreen("images/splash.png");
+
+             SplashScreen quadro = new SplashScreen("images/splash.png");
             // Show the splash screen.
             // The true parameter sets the splashScreen to fade away automatically
             // after the first window appears.
@@ -149,14 +150,8 @@ namespace WPFLab
                 img.Source = new BitmapImage(uri);
                 Tools.sayHello("--- Uri absoluta ---");
             }
-                
-
-            
 
             bUriRelative = !bUriRelative;
-
-            // new Uri("ImageLibrary;component/images/winter.jpg", UriKind.Relative));
-           
         }
     }
 }

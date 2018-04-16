@@ -39,7 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ImageLibrary">
-      <HintPath>..\ImageLibrary\bin\Release\ImageLibrary.dll</HintPath>
+      <HintPath>..\ImageLibrary\bin\Debug\ImageLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

@@ -33,5 +33,35 @@ namespace WPFLab.Janelas
         {
             lblSampleText.FontSize = 30;
         }
+
+        private void btnSetBinding_onClick(object sender, RoutedEventArgs e)
+        {
+            Binding binding = new Binding();
+            binding.Source = sliderFontSizeEx;
+            binding.Path = new PropertyPath("Value");
+            binding.Mode = BindingMode.TwoWay;
+            lblSampleTextEx.SetBinding(TextBlock.FontSizeProperty, binding);
+
+
+            // Vamos mostrar o código-fonte:
+            string msg = @"Binding binding = new Binding();
+binding.Source = sliderFontSizeEx;
+binding.Path = new PropertyPath(''Value'');
+binding.Mode = BindingMode.TwoWay;
+lblSampleTextEx.SetBinding(TextBlock.FontSizeProperty, binding);";
+            string title = "Binding aplicado: ";
+            MessageBox.Show(msg, title);
+        }
+
+        private void btnClearBinding_onClick(object sender, RoutedEventArgs e)
+        {
+            BindingOperations.ClearAllBindings(lblSampleTextEx);
+
+            string msg = "BindingOperations.ClearAllBindings(lblSampleTextEx);";
+            string title = "Limpeza de binding aplicado: ";
+            MessageBox.Show(msg, title);
+
+
+        }
     }
 }

@@ -1,0 +1,7 @@
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\bin\Debug\ImageLibrary.dll
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\bin\Debug\ImageLibrary.pdb
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\obj\Debug\ImageLibrary.csprojResolveAssemblyReference.cache
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\obj\Debug\ImageLibrary.g.resources
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\obj\Debug\ImageLibrary.csproj.CoreCompileInputs.cache
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\obj\Debug\ImageLibrary.dll
+C:\Users\jairxpereira\source\repos\WPFLab\ImageLibrary\obj\Debug\ImageLibrary.pdb
