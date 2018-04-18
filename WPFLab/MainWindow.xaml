@@ -15,7 +15,16 @@
         <Button x:Name="btnTreeWindow" Content="Tree Window" Click="btnTreeWindow_onClick"/>
         
         <Button x:Name="btnSplash" Content="SplashScreen" Click="btnSplash_onClick"/>
-        <Button x:Name="btnBinding" Content="Binding" Click="btnBinding_onClick"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnBinding" Content="Binding" Click="btnBinding_onClick"/>
+            <Button x:Name="btnBindingEx" Content="BindingEx" Click="btnBindingEx_onClick"/>
+            
+            <Button x:Name="btnMultiBinding" Content="MultiBinding" Click="btnMultiBinding_onClick" Width="285"/>            
+        </StackPanel>
+
+
+
         <Button x:Name="btnCommand" Content="Command Window" Click="btnCommand_onClick"/>
 
         <StackPanel Orientation="Horizontal" >

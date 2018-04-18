@@ -153,5 +153,17 @@ namespace WPFLab
 
             bUriRelative = !bUriRelative;
         }
+
+        private void btnMultiBinding_onClick(object sender, RoutedEventArgs e)
+        {
+            var wnd = new Janelas.WndMultipleBinding();
+            wnd.Show();
+        }
+
+        private void btnBindingEx_onClick(object sender, RoutedEventArgs e)
+        {
+            var wnd = new Janelas.WndBindingEx();
+            wnd.Show();
+        }
     }
 }

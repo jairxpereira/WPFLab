@@ -65,6 +65,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Janelas\WndBindingEx.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Janelas\WndCommand.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -74,6 +78,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Janelas\WndList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Janelas\WndMultipleBinding.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -101,6 +109,9 @@
     <Compile Include="Janelas\WndBinding.xaml.cs">
       <DependentUpon>WndBinding.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Janelas\WndBindingEx.xaml.cs">
+      <DependentUpon>WndBindingEx.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Janelas\WndCommand.xaml.cs">
       <DependentUpon>WndCommand.xaml</DependentUpon>
     </Compile>
@@ -109,6 +120,9 @@
     </Compile>
     <Compile Include="Janelas\WndList.xaml.cs">
       <DependentUpon>WndList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Janelas\WndMultipleBinding.xaml.cs">
+      <DependentUpon>WndMultipleBinding.xaml</DependentUpon>
     </Compile>
     <Compile Include="Janelas\WndRanged.xaml.cs">
       <DependentUpon>WndRanged.xaml</DependentUpon>
