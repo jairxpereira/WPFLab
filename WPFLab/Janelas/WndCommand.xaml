@@ -12,10 +12,12 @@
     </Window.Resources>   
 
     <Window.CommandBindings>
-        <CommandBinding Command="ApplicationCommands.New" Executed="action_onNovo" CanExecute="novoCommand_CanExecute"></CommandBinding>
+        <CommandBinding Command="ApplicationCommands.New" 
+                        Executed="action_onNovo" CanExecute="novoCommand_CanExecute"></CommandBinding>
 
         <CommandBinding Command="local:GameCommands.Jogar"
 Executed="jogarCommand_Executed"></CommandBinding>
+        
     </Window.CommandBindings>
 
 

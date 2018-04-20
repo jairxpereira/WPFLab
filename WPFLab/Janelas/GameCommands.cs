@@ -19,9 +19,11 @@ namespace WPFLab.Janelas
             jogar = new RoutedUICommand(
             "jogar", "jogar", typeof(GameCommands), inputs);
         }
+
         public static RoutedUICommand Jogar
         {
             get { return jogar; }
         }
+
     }
 }
